@@ -1,0 +1,273 @@
+/* Home.css */
+@font-face {
+    font-family: OpenSans;
+    src: url(../OpenSans-VariableFont_wdth,wght.ttf);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .home-container {
+    font-family: OpenSans;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: #003249;
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 15px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    color: white;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  /* Text Section (Left side) */
+  .text-section {
+    flex: 1;
+    max-width: 55%;
+    margin-top: -4rem;
+  }
+  
+  .text-section h1 {
+    font-size: 3.7rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .text-section p {
+    font-size: 1.3rem;
+  }
+  
+  /* Form Section (Right side) */
+  .form-section {
+    flex: 1;
+    max-width: 25%;
+    background-color: #fff;
+    color: #333;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .form-section h2 {
+    font-size: 2rem;
+    color: #000;
+    margin: 0;
+  }
+  
+  .form-section span {
+    color: #1f5ea1;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  .form-group textarea {
+    height: 150px;
+  }
+  
+  button {
+    background-color: #1a518b;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+ /* Services Section */
+.services-section {
+    font-family: OpenSans;
+    text-align: center;
+    padding: 4rem 4rem 4rem 4rem; 
+    background-color: #f4f4f4;
+  }
+
+  .services-section h2{
+    font-size: 2.3rem;
+    margin-bottom: 70px;
+    font-weight: 600;
+  }
+  
+  /* Service Card Grid */
+  .service-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 330px);
+    gap: 4rem; 
+    justify-content: center; 
+  }
+  
+  /* Individual Service Card Styling */
+  .service-card {
+    width: 330px; 
+    height: 330px; 
+    background-color: white;
+    padding: 1.5rem;
+    box-shadow:1px 1px 12px 4px #e1dede;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .service-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+    color: #003249;
+  }
+  
+
+/* Technoforte Description Section */
+.description {
+    padding: 4rem;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: OpenSans;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+  }
+  
+  .description h2 {
+    font-size: 2.3rem;
+    color: #000000;
+    margin-bottom: 60px;
+    font-weight: 600;
+  }
+  
+  .description span{
+    font-size: 1.4rem;
+    color: #3c3f41;
+    font-weight: bold;
+    margin-top: 2rem;
+    text-align: justify;
+  }
+  
+  .description p {
+    font-size: 1.3rem;
+    color: #1d1d1d;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+  }
+  @media (max-width: 576px) {
+  
+    .home-content {
+      flex-direction: column;
+      padding: 2rem 0; 
+      gap: 1rem; 
+    }
+  
+    .text-section {
+      max-width: 100%; 
+      margin-top: 0;
+      text-align: center; 
+    }
+  
+    .text-section h1 {
+      font-size: 2.2rem; 
+    }
+  
+    .text-section p {
+      font-size: 1.1rem;
+      display: flex;
+     text-align: justify;
+
+    }
+  
+    .form-section {
+      max-width: 100%; 
+      margin-top: 0; 
+      padding: 1.5rem; 
+      width: 100%; 
+    }
+  
+    .services-section {
+      padding: 2rem; 
+    }
+  
+    .services-section h2 {
+      font-size: 1.8rem; 
+      margin-bottom: 40px; 
+    }
+  
+    .service-cards {
+      grid-template-columns: 1fr; 
+      gap: 1.5rem; 
+    }
+  
+    .service-card {
+      width: 100%; 
+      height: auto; 
+      padding: 1rem; 
+    }
+  
+    .description {
+      padding: 2rem 0; 
+    }
+  
+    .description h2 {
+      font-size: 1.8rem; 
+      margin-bottom: 40px; 
+    }
+  
+    .description p, 
+    .description span {
+      font-size: 1.1rem; 
+      text-align: justify; 
+    }
+  }
+  
