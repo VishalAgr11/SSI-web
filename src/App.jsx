@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css'
-import { HashRouter as Router, Route, Routes, HashRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 
 function App() {
@@ -8,12 +8,12 @@ function App() {
   return (
     <>
       <div>
-        <HashRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
           <Routes>
           <Route path="/" element={<Home />} />
 
           </Routes>
-        </HashRouter>
+        </BrowserRouter>
        
       </div>
     </>
