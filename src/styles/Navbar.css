@@ -1,7 +1,10 @@
-/* Navbar.css */
 @font-face {
-  font-family: Roboto;
-  src: url(../RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf);
+  font-family: 'Roboto';
+  src: url(../RobotoFlex-VariableFont.ttf);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
 .navbar {
@@ -16,7 +19,7 @@
   width: 100%;
   z-index: 1000;
   padding: 1rem 2rem;
-  height: 85px;
+  height: 60px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -44,7 +47,7 @@
 .navbar-links li a {
   color: #000000;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
